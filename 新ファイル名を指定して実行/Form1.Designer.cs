@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            新ファイル名を指定して実行.Properties.Settings settings2 = new 新ファイル名を指定して実行.Properties.Settings();
+            新ファイル名を指定して実行.Properties.Settings settings1 = new 新ファイル名を指定して実行.Properties.Settings();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.comboBoxMain = new System.Windows.Forms.ComboBox();
             this.labelDetailInformation = new System.Windows.Forms.Label();
             this.comboBoxDisplay = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBoxKidoSetting = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.statusLb = new System.Windows.Forms.TextBox();
+            this.checkBoxKidoSetting = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +53,7 @@
             this.comboBoxMain.TabIndex = 0;
             this.comboBoxMain.TextUpdate += new System.EventHandler(this.comboBoxMain_TextUpdate);
             this.comboBoxMain.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBoxMain_KeyDown);
+            this.comboBoxMain.KeyUp += new System.Windows.Forms.KeyEventHandler(this.comboBoxMain_KeyUp);
             // 
             // labelDetailInformation
             // 
@@ -95,23 +97,6 @@
             this.panel1.Size = new System.Drawing.Size(358, 128);
             this.panel1.TabIndex = 5;
             // 
-            // checkBoxKidoSetting
-            // 
-            this.checkBoxKidoSetting.AutoSize = true;
-            settings2.COMMANDS = ((System.Collections.Specialized.StringCollection)(resources.GetObject("settings2.COMMANDS")));
-            settings2.displaySetting = "左上";
-            settings2.kidoSetting = false;
-            settings2.SettingsKey = "";
-            this.checkBoxKidoSetting.Checked = settings2.kidoSetting;
-            this.checkBoxKidoSetting.DataBindings.Add(new System.Windows.Forms.Binding("Checked", settings2, "kidoSetting", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.checkBoxKidoSetting.Location = new System.Drawing.Point(14, 12);
-            this.checkBoxKidoSetting.Name = "checkBoxKidoSetting";
-            this.checkBoxKidoSetting.Size = new System.Drawing.Size(69, 16);
-            this.checkBoxKidoSetting.TabIndex = 2;
-            this.checkBoxKidoSetting.Text = "常に起動";
-            this.checkBoxKidoSetting.UseVisualStyleBackColor = true;
-            this.checkBoxKidoSetting.CheckedChanged += new System.EventHandler(this.checkBoxKidoSetting_CheckedChanged);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -141,11 +126,42 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "管理者権限:CTRL+SHIFT 設定:F1";
             // 
+            // statusLb
+            // 
+            this.statusLb.BackColor = System.Drawing.SystemColors.Info;
+            this.statusLb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.statusLb.Enabled = false;
+            this.statusLb.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusLb.Location = new System.Drawing.Point(171, 12);
+            this.statusLb.Multiline = true;
+            this.statusLb.Name = "statusLb";
+            this.statusLb.ReadOnly = true;
+            this.statusLb.Size = new System.Drawing.Size(201, 38);
+            this.statusLb.TabIndex = 11;
+            // 
+            // checkBoxKidoSetting
+            // 
+            this.checkBoxKidoSetting.AutoSize = true;
+            settings1.COMMANDS = ((System.Collections.Specialized.StringCollection)(resources.GetObject("settings1.COMMANDS")));
+            settings1.displaySetting = "左上";
+            settings1.kidoSetting = false;
+            settings1.SettingsKey = "";
+            this.checkBoxKidoSetting.Checked = settings1.kidoSetting;
+            this.checkBoxKidoSetting.DataBindings.Add(new System.Windows.Forms.Binding("Checked", settings1, "kidoSetting", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBoxKidoSetting.Location = new System.Drawing.Point(14, 12);
+            this.checkBoxKidoSetting.Name = "checkBoxKidoSetting";
+            this.checkBoxKidoSetting.Size = new System.Drawing.Size(69, 16);
+            this.checkBoxKidoSetting.TabIndex = 2;
+            this.checkBoxKidoSetting.Text = "常に起動";
+            this.checkBoxKidoSetting.UseVisualStyleBackColor = true;
+            this.checkBoxKidoSetting.CheckedChanged += new System.EventHandler(this.checkBoxKidoSetting_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 461);
+            this.Controls.Add(this.statusLb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
@@ -180,6 +196,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox statusLb;
     }
 }
 

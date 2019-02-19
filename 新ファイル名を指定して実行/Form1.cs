@@ -24,6 +24,8 @@ namespace 新ファイル名を指定して実行
         List<string> details2 = new List<string>();
         List<string> commands = new List<string>();
 
+        List<Command> commandList = new List<Command>();
+
         public Form1()
         {
             InitializeComponent();
@@ -53,15 +55,26 @@ namespace 新ファイル名を指定して実行
             comboBoxMain.AutoCompleteSource = AutoCompleteSource.CustomSource;
             comboBoxMain.AutoCompleteCustomSource = sAutoList;
             //コンボボックス サジェストコマンド登録
-            StringCollection commandlist = Properties.Settings.Default.COMMANDS;
-            foreach (String command in commandlist)
+            StringCollection configCommandList = Properties.Settings.Default.COMMANDS;
+            foreach (String record in configCommandList)
             {
-                String[] items = command.Split(',');
-                aliass.Add(items[0]);
-                details1.Add(items[1]);
-                details2.Add(items[2]);
-                commands.Add(items[3]);
-                sAutoList.Add(items[0] + "       [" + items[1] + " ]");
+                if (string.IsNullOrEmpty(record))
+                {
+                    continue;
+                }
+                String[] items = record.Split(',');
+                //コマンドリストの作成
+                Command command = new Command
+                {
+                    alias = items[0],
+                    detail1 = items[1],
+                    detail2 = items[2],
+                    commadName = items[3],
+                    auth = items[4]
+                };
+                commandList.Add(command);
+                //サジェスト登録
+                sAutoList.Add(items[0]);
             }
         }
 
@@ -74,19 +87,33 @@ namespace 新ファイル名を指定して実行
         {
             if (e.KeyValue == (char)Keys.Enter)
             {
-                int currentCount =
-                 aliass.IndexOf(comboBoxMain.Text.Split(new String[] { "[" }, StringSplitOptions.None)[0].Trim());
-                String currentArg = "";
-                String currentCommand = "";
-                if (currentCount != -1)
+                //int currentCount =
+                // aliass.IndexOf(comboBoxMain.Text.Split(new String[] { "[" }, StringSplitOptions.None)[0].Trim());
+                //String currentArg = "";
+                //String currentCommand = "";
+                //if (currentCount != -1)
+                //{
+                //    currentCommand = commands[currentCount];
+                //}
+                //else
+                //{
+                //    currentCommand = comboBoxMain.Text.Split(new String[] { "[" }, StringSplitOptions.None)[0].Trim();
+                //}
+
+                //エイリアスからコマンドを取得する
+                String currentCommand;
+                try
                 {
-                    currentCommand = commands[currentCount];
+                    currentCommand = commandList.SingleOrDefault(a => a.alias == comboBoxMain.Text).commadName;
                 }
-                else
+                catch (Exception ex)
                 {
-                    currentCommand = comboBoxMain.Text.Split(new String[] { "[" }, StringSplitOptions.None)[0].Trim();
+                    MessageBox.Show(ex.Message);
+                    return;
                 }
 
+                //オプションを分割
+                String currentArg = "";
                 if (currentCommand.IndexOf(" ") != -1)
                 {
                     //shell:で始まるもの抜ける
@@ -100,6 +127,7 @@ namespace 新ファイル名を指定して実行
                     }
                 }
 
+                //コマンド実行
                 Process p = new Process();
                 p.StartInfo.FileName = currentCommand;          // コマンド名
                 if (currentArg != "") { p.StartInfo.Arguments = currentArg; }         // 引数有の場合
@@ -129,9 +157,9 @@ namespace 新ファイル名を指定して実行
                         this.Dispose();
                     }
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("コマンドありません");
+                    MessageBox.Show("コマンドありません" + Environment.NewLine + ex.Message);
                 }
             }
         }
@@ -189,11 +217,27 @@ namespace 新ファイル名を指定して実行
             Properties.Settings.Default.kidoSetting = checkBoxKidoSetting.Checked;
             Properties.Settings.Default.Save();
         }
-
         private void comboBoxDisplay_TextChanged(object sender, EventArgs e)
         {
             Properties.Settings.Default.displaySetting = comboBoxDisplay.Text;
             Properties.Settings.Default.Save();
+        }
+
+        private void comboBoxMain_KeyUp(object sender, KeyEventArgs e)
+        {
+            Command command;
+            try
+            {
+                command = commandList.SingleOrDefault(a => a.alias == comboBoxMain.Text);
+                statusLb.ForeColor = Color.Black;
+                statusLb.Text = command.commadName + Environment.NewLine + command.detail1;
+            }
+            catch (Exception ex)
+            {
+                statusLb.ForeColor = Color.Red;
+                statusLb.Text = ex.Message;
+                return;
+            }
         }
     }
 }
