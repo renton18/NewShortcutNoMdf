@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace 新ファイル名を指定して実行
@@ -17,7 +12,7 @@ namespace 新ファイル名を指定して実行
     public partial class Form1 : Form
     {
         //フォーム移動用
-        [DllImport("user32.dll")]extern static int MoveWindow(IntPtr hwnd, int x, int y, int nWidth, int nHeight, int bRepaint);
+        [DllImport("user32.dll")] extern static int MoveWindow(IntPtr hwnd, int x, int y, int nWidth, int nHeight, int bRepaint);
 
         List<string> aliass = new List<string>();
         List<string> details1 = new List<string>();
@@ -119,11 +114,8 @@ namespace 新ファイル名を指定して実行
                     //shell:で始まるもの抜ける
                     if (currentCommand.IndexOf("shell:") == -1)
                     {
-                        if (currentCommand.IndexOf("control") == -1)
-                        {
-                            currentArg = currentCommand.Substring(currentCommand.IndexOf(" "), currentCommand.Length - currentCommand.IndexOf(" ")).Trim();
-                            currentCommand = currentCommand.Substring(0, currentCommand.IndexOf(" ")).Trim();
-                        }
+                        currentArg = currentCommand.Substring(currentCommand.IndexOf(" "), currentCommand.Length - currentCommand.IndexOf(" ")).Trim();
+                        currentCommand = currentCommand.Substring(0, currentCommand.IndexOf(" ")).Trim();
                     }
                 }
 
@@ -193,6 +185,9 @@ namespace 新ファイル名を指定して実行
                     case "左下": this.Top = Screen.PrimaryScreen.Bounds.Height - this.Height - 35; break;
                     default: break;
                 }
+
+                //Datagridview表示
+                commandBindingSource.DataSource = commandList.ToList();
             }
             //管理者権限表示
             if (e.Shift && e.Control)

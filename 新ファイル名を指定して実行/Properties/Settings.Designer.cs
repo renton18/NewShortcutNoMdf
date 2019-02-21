@@ -25,99 +25,6 @@ namespace 新ファイル名を指定して実行.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
-            "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
-            "tring>エイリアス,詳細,補足,コマンド,管理者権限</string>\r\n  <string xsi:nil=\"true\" />\r\n  <string>ev" +
-            "entvwr,イベントビューア,,eventvwr,</string>\r\n  <string>inetcpl.cpl,インターネットオプション,,inetcpl" +
-            ".cpl,</string>\r\n  <string xsi:nil=\"true\" />\r\n  <string>explorer,エクスプローラ,,explore" +
-            "r,</string>\r\n  <string>packager,オブジェクトパッケージャ,,packager,</string>\r\n  <string>eudc" +
-            "edit,外字エディタ,,eudcedit,</string>\r\n  <string>magnify,拡大鏡,,magnify,</string>\r\n  <st" +
-            "ring>desk.cpl,画面のプロパティ,,desk.cpl,</string>\r\n  <string>control,コントロールパネル,,control" +
-            ",</string>\r\n  <string>control admintools,管理ツール,,control admintools,</string>\r\n  " +
-            "<string>control printers,デバイスとプリンタ,,control printers,</string>\r\n  <string>contro" +
-            "l folders,フォルダオプション,,control FOLDERS,</string>\r\n  <string>fsmgmt.msc,共有フォルダ,,fsm" +
-            "gmt.msc,</string>\r\n  <string>shrpubw,共有フォルダの作成,,shrpubw,</string>\r\n  <string>cli" +
-            "pbrd,クリップブック,,clipbrd,</string>\r\n  <string>gpedit.msc,グループポリシー,,gpedit.msc,</str" +
-            "ing>\r\n  <string>joy.cpl,ゲームコントローラ,,joy.cpl,</string>\r\n  <string>mmc,コンソール,,mmc,<" +
-            "/string>\r\n  <string>compmgmt.msc,コンピュータの管理,,compmgmt.msc,</string>\r\n  <string>se" +
-            "rvices.msc,サービス,,services.msc,</string>\r\n  <string>mmsys.cpl,サウンドとオーディオデバイスのプロパテ" +
-            "ィ,,mmsys.cpl,</string>\r\n  <string>sndrec32,サウンドレコーダー,,sndrec32,</string>\r\n  <str" +
-            "ing>sysedit,システムエディタ,,sysedit,</string>\r\n  <string>msconfig,システム構成ユーティリティ,,mscon" +
-            "fig,</string>\r\n  <string>msinfo32,システム情報,,msinfo32,</string>\r\n  <string>sysdm.cp" +
-            "l,システムのプロパティ,,sysdm.cpl,</string>\r\n  <string>wuaucpl.cpl,自動更新,,wuaucpl.cpl,</str" +
-            "ing>\r\n  <string>certmgr.msc,証明書,,certmgr.msc,</string>\r\n  <string>osk,スクリーンキーボード" +
-            ",,osk,</string>\r\n  <string>spider,スパイダ,,spider,</string>\r\n  <string>fxscover,送付状" +
-            "エディタ,,fxscover,</string>\r\n  <string>sol,ソリティア,,sol,</string>\r\n  <string>taskmgr," +
-            "タスクマネージャ,,taskmgr,</string>\r\n  <string>intl.cpl,地域と言語のオプション,,intl.cpl,</string>\r" +
-            "\n  <string>winchat,チャット,,winchat,</string>\r\n  <string>cleanmgr,ディスククリーンアップ,,clea" +
-            "nmgr,</string>\r\n  <string>dfrg.msc,ディスクデフラグツール,,dfrg.msc,</string>\r\n  <string>di" +
-            "skmgmt.msc,ディスクの管理,,diskmgmt.msc,</string>\r\n  <string>devmgmt.msc,デバイスマネージャ,,dev" +
-            "mgmt.msc,</string>\r\n  <string>powercfg.cpl,電源オプション,,powercfg.cpl,</string>\r\n  <s" +
-            "tring>calc,電卓,,calc,</string>\r\n  <string xsi:nil=\"true\" />\r\n  <string xsi:nil=\"t" +
-            "rue\" />\r\n  <string>ncpa.cpl,ネットワーク接続,,ncpa.cpl,</string>\r\n  <string>netsetup.cpl" +
-            ",ネットワークセットアップウィザード,,netsetup.cpl,</string>\r\n  <string>mshearts,ハーツ,,mshearts,</s" +
-            "tring>\r\n  <string>hdwwiz.cpl,ハードウェアの追加ウィザード,,hdwwiz.cpl,</string>\r\n  <string>per" +
-            "fmon,パフォーマンス,,perfmon,</string>\r\n  <string>timedate.cpl,日付と時刻のプロパティ,,timedate.cp" +
-            "l,</string>\r\n  <string>pinball,ピンボール,,pinball,</string>\r\n  <string>migwiz,ファイルと設" +
-            "定の転送ウィザード,,migwiz,</string>\r\n  <string>sigverif,ファイルの署名と確認,,sigverif,</string>\r\n" +
-            "  <string>fonts,フォントフォルダ,,fonts,</string>\r\n  <string xsi:nil=\"true\" />\r\n  <strin" +
-            "g>appwiz.cpl,プログラムの追加と削除,,appwiz.cpl,</string>\r\n  <string>dcomcnfg,分散COMの構成のプロパテ" +
-            "ィ,,dcomcnfg,</string>\r\n  <string>mspaint,ペイント,,mspaint,</string>\r\n  <string>rsop" +
-            ".msc,ポリシーの結果セット,,rsop.msc,</string>\r\n  <string>sndvol32,ボリュームコントロール,,sndvol32,</" +
-            "string>\r\n  <string>winmine,マインスイーパ,,winmine,</string>\r\n  <string>main.cpl,マウスのプロ" +
-            "パティ,,main.cpl,</string>\r\n  <string>notepad,メモ帳,,notepad,</string>\r\n  <string>cha" +
-            "rmap,文字コード表,,charmap,</string>\r\n  <string>nusrmgr.cpl,ユーザーアカウント,,nusrmgr.cpl,</s" +
-            "tring>\r\n  <string>accwiz,ユーザー補助の設定ウィザード,,accwiz,</string>\r\n  <string>utilman,ユーテ" +
-            "ィリティマネージャ,,utilman,</string>\r\n  <string>ntmsmgr.msc,リムーバブル記憶領域の管理,,ntmsmgr.msc,<" +
-            "/string>\r\n  <string>ntmsoprq.msc,リムーバブル記憶領域の操作要求,,ntmsoprq.msc,</string>\r\n  <str" +
-            "ing>mstsc,リモートデスクトップ接続,,mstsc,</string>\r\n  <string>regedit,レジストリエディタ,,regedit,</" +
-            "string>\r\n  <string>secpol.msc,ローカルセキュリティポリシー,,secpol.msc,</string>\r\n  <string>lu" +
-            "srmgr.msc,ローカルユーザとグループ,,lusrmgr.msc,</string>\r\n  <string>logoff,ログオフ,,logoff,</s" +
-            "tring>\r\n  <string>wordpad,ワードパット,,wordpad,</string>\r\n  <string>drwatson,ワトソン博士,," +
-            "drwatson,</string>\r\n  <string>msaccess,Access,,msaccess,</string>\r\n  <string>dde" +
-            "share,DDE共有,,ddeshare,</string>\r\n  <string>dxdiag,Direct X診断ツール,,dxdiag,</string" +
-            ">\r\n  <string>verifier,Driver Verifier Manager（システム内のドライバ分析）,,verifier,</string>\r" +
-            "\n  <string>excel,Excel,,excel,</string>\r\n  <string>iexpress,IExpress（自己解凍書庫作成）,," +
-            "iexpress,</string>\r\n  <string>iexplorer,Internet Explorer,,iexplorer,</string>\r\n" +
-            "  <string>wupdmgr,Microsoft Update,,wupdmgr,</string>\r\n  <string>mrt,Microsoft W" +
-            "indows　悪意のあるソフトウェアの削除ツール,,mrt,</string>\r\n  <string>nslookup,nslookup,,nslookup,<" +
-            "/string>\r\n  <string>odbcad32,ODBCデータソースアドミニストレータ,,odbcad32,</string>\r\n  <string>" +
-            "outlook,Outlook,,outlook,</string>\r\n  <string>powerpnt,PowerPoint,,powerpnt,</st" +
-            "ring>\r\n  <string>telnet,Telnet,,telnet,</string>\r\n  <string>visio32,Visio,,visio" +
-            "32,</string>\r\n  <string>wmplayer,Windows Media Player,,wmplayer,</string>\r\n  <st" +
-            "ring>wscript,Windows Script Hostの設定,,wscript,</string>\r\n  <string>syskey,Windows" +
-            " XPアカウントデータベースのセキュリティ保護,,syskey,</string>\r\n  <string>wscui.msc,Windowsセキュリティセンター" +
-            ",,wscui.msc,</string>\r\n  <string>winver,Windowsバージョン情報,,winver,</string>\r\n  <str" +
-            "ing>firewall.cpl,Windowsファイアウォール,,firewall.cpl,</string>\r\n  <string>wmimgmt.msc," +
-            "WMI,,wmimgmt.msc,</string>\r\n  <string>winword,Word,,winword,</string>\r\n  <string" +
-            ">shell:Startup,ユーザーのスタートアップ,\\Microsoft\\Windows\\Start Menu\\Programs\\Startup,shell" +
-            ":Startup,</string>\r\n  <string>shell:Start Menu,ユーザーのスタートメニュー,【ホットキ-】\\Microsoft\\W" +
-            "indows\\Start Menu,shell:Start Menu,</string>\r\n  <string>shell:Programs,プログラムフォルダ" +
-            ",,shell:Programs,</string>\r\n  <string>shell:Downloads,ダウンロードフォルダ,,shell:Download" +
-            "s,</string>\r\n  <string>cmd /k ipconfig,コマンドプロンプト,,cmd /k ipconfig,</string>\r\n  <" +
-            "string>cmd,コマンドプロンプト,,cmd,</string>\r\n  <string>ms-settings:windowsupdate,Windows" +
-            "Update,,ms-settings:windowsupdate,</string>\r\n  <string>ms-settings:powersleep,電源" +
-            "とスリープ,,ms-settings:powersleep,</string>\r\n  <string>ms-settings:display,ディスプレイ,,m" +
-            "s-settings:display,</string>\r\n  <string>ms-settings:printers,プリンターとスキャナ,,ms-sett" +
-            "ings:printers,</string>\r\n  <string>hosts,ホストファイル編集,,notepad C:\\Windows\\System32\\" +
-            "drivers\\etc\\hosts,</string>\r\n  <string>share,共有フォルダ,,D:\\95_share,</string>\r\n  <s" +
-            "tring>work,ワークフォルダ,,D:\\96_work,</string>\r\n  <string>tool,ツールフォルダ,,D:\\97_tool,</s" +
-            "tring>\r\n  <string>printscreen,キャプチャフォルダ,,D:\\98_printscreen,</string>\r\n  <string>" +
-            "my,ショートカットキーフォルダ,,D:\\99_my,</string>\r\n  <string>environment,環境変数,,rundll32.exe s" +
-            "ysdm.cpl EditEnvironmentVariables,</string>\r\n  <string>kinou,機能の有効化または無効化,,Optio" +
-            "nalFeatures.exe,</string>\r\n  <string>UAC,ユーザー制御,,UserAccountControlSettings.exe," +
-            "</string>\r\n</ArrayOfString>")]
-        public global::System.Collections.Specialized.StringCollection COMMANDS {
-            get {
-                return ((global::System.Collections.Specialized.StringCollection)(this["COMMANDS"]));
-            }
-            set {
-                this["COMMANDS"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool kidoSetting {
             get {
@@ -137,6 +44,89 @@ namespace 新ファイル名を指定して実行.Properties {
             }
             set {
                 this["displaySetting"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
+            "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
+            "tring>エイリアス,詳細,補足,コマンド,管理者権限</string>\r\n  <string>eventvwr,イベントビューア,,eventvwr,</s" +
+            "tring>\r\n  <string>inetcpl.cpl,インターネットオプション,,inetcpl.cpl,</string>\r\n  <string>cia" +
+            "dv.msc,インデックスサービス,,ciadv.msc,</string>\r\n  <string>explorer,エクスプローラ,,explorer,</s" +
+            "tring>\r\n  <string>eudcedit,外字エディタ,,eudcedit,</string>\r\n  <string>magnify,拡大鏡,,ma" +
+            "gnify,</string>\r\n  <string>desk.cpl,画面のプロパティ,,desk.cpl,</string>\r\n  <string>cont" +
+            "rol,コントロールパネル,,control,</string>\r\n  <string>control admintools,管理ツール,,control ad" +
+            "mintools,</string>\r\n  <string>control printers,デバイスとプリンタ,,control printers,</str" +
+            "ing>\r\n  <string>control folders,フォルダオプション,,control FOLDERS,</string>\r\n  <string>" +
+            "fsmgmt.msc,共有フォルダ,,fsmgmt.msc,</string>\r\n  <string>gpedit.msc,グループポリシー,,gpedit.m" +
+            "sc,</string>\r\n  <string>joy.cpl,ゲームコントローラ,,joy.cpl,</string>\r\n  <string>mmc,コンソー" +
+            "ル,,mmc,</string>\r\n  <string>compmgmt.msc,コンピュータの管理,,compmgmt.msc,</string>\r\n  <s" +
+            "tring>services.msc,サービス,,services.msc,</string>\r\n  <string>mmsys.cpl,サウンドとオーディオデ" +
+            "バイスのプロパティ,,mmsys.cpl,</string>\r\n  <string>sndrec32,サウンドレコーダー,,sndrec32,</string>" +
+            "\r\n  <string>sysedit,システムエディタ,,sysedit,</string>\r\n  <string>msconfig,システム構成ユーティリテ" +
+            "ィ,,msconfig,</string>\r\n  <string>msinfo32,システム情報,,msinfo32,</string>\r\n  <string>" +
+            "sysdm.cpl,システムのプロパティ,,sysdm.cpl,</string>\r\n  <string>wuaucpl.cpl,自動更新,,wuaucpl.c" +
+            "pl,</string>\r\n  <string>certmgr.msc,証明書,,certmgr.msc,</string>\r\n  <string>osk,スク" +
+            "リーンキーボード,,osk,</string>\r\n  <string>spider,スパイダ,,spider,</string>\r\n  <string>fxsc" +
+            "over,送付状エディタ,,fxscover,</string>\r\n  <string>sol,ソリティア,,sol,</string>\r\n  <string>" +
+            "taskmgr,タスクマネージャ,,taskmgr,</string>\r\n  <string>intl.cpl,地域と言語のオプション,,intl.cpl,</" +
+            "string>\r\n  <string>winchat,チャット,,winchat,</string>\r\n  <string>cleanmgr,ディスククリーンア" +
+            "ップ,,cleanmgr,</string>\r\n  <string>dfrg.msc,ディスクデフラグツール,,dfrg.msc,</string>\r\n  <s" +
+            "tring>diskmgmt.msc,ディスクの管理,,diskmgmt.msc,</string>\r\n  <string>devmgmt.msc,デバイスマネ" +
+            "ージャ,,devmgmt.msc,</string>\r\n  <string>powercfg.cpl,電源オプション,,powercfg.cpl,</strin" +
+            "g>\r\n  <string>calc,電卓,,calc,</string>\r\n  <string>ncpa.cpl,ネットワーク接続,,ncpa.cpl,</s" +
+            "tring>\r\n  <string>mshearts,ハーツ,,mshearts,</string>\r\n  <string>perfmon,パフォーマンス,,p" +
+            "erfmon,</string>\r\n  <string>timedate.cpl,日付と時刻のプロパティ,,timedate.cpl,</string>\r\n  " +
+            "<string>sigverif,ファイルの署名と確認,,sigverif,</string>\r\n  <string>fonts,フォントフォルダ,,fonts" +
+            ",</string>\r\n  <string>appwiz.cpl,プログラムの追加と削除,,appwiz.cpl,</string>\r\n  <string>ms" +
+            "paint,ペイント,,mspaint,</string>\r\n  <string>sndvol32,ボリュームコントロール,,sndvol32,</string" +
+            ">\r\n  <string>main.cpl,マウスのプロパティ,,main.cpl,</string>\r\n  <string>notepad,メモ帳,,note" +
+            "pad,</string>\r\n  <string>charmap,文字コード表,,charmap,</string>\r\n  <string>nusrmgr.cp" +
+            "l,ユーザーアカウント,,nusrmgr.cpl,</string>\r\n  <string>ntmsmgr.msc,リムーバブル記憶領域の管理,,ntmsmgr" +
+            ".msc,</string>\r\n  <string>ntmsoprq.msc,リムーバブル記憶領域の操作要求,,ntmsoprq.msc,</string>\r\n" +
+            "  <string>mstsc,リモートデスクトップ接続,,mstsc,</string>\r\n  <string>regedit,レジストリエディタ,,rege" +
+            "dit,</string>\r\n  <string>secpol.msc,ローカルセキュリティポリシー,,secpol.msc,</string>\r\n  <str" +
+            "ing>lusrmgr.msc,ローカルユーザとグループ,,lusrmgr.msc,</string>\r\n  <string>logoff,ログオフ,,logo" +
+            "ff,</string>\r\n  <string>wordpad,ワードパット,,wordpad,</string>\r\n  <string>msaccess,Ac" +
+            "cess,,msaccess,</string>\r\n  <string>dxdiag,Direct X診断ツール,,dxdiag,</string>\r\n  <s" +
+            "tring>excel,Excel,,excel,</string>\r\n  <string>iexpress,IExpress（自己解凍書庫作成）,,iexpr" +
+            "ess,</string>\r\n  <string>iexplorer,Internet Explorer,,iexplorer,</string>\r\n  <st" +
+            "ring>wupdmgr,Microsoft Update,,wupdmgr,</string>\r\n  <string>mrt,Microsoft Window" +
+            "s　悪意のあるソフトウェアの削除ツール,,mrt,</string>\r\n  <string>nslookup,nslookup,,nslookup,</stri" +
+            "ng>\r\n  <string>odbcad32,ODBCデータソースアドミニストレータ,,odbcad32,</string>\r\n  <string>outlo" +
+            "ok,Outlook,,outlook,</string>\r\n  <string>powerpnt,PowerPoint,,powerpnt,</string>" +
+            "\r\n  <string>telnet,Telnet,,telnet,</string>\r\n  <string>visio32,Visio,,visio32,</" +
+            "string>\r\n  <string>wmplayer,Windows Media Player,,wmplayer,</string>\r\n  <string>" +
+            "wscui.msc,Windowsセキュリティセンター,,wscui.msc,</string>\r\n  <string>winver,Windowsバージョン情" +
+            "報,,winver,</string>\r\n  <string>firewall1,Windowsファイアウォール,,firewall.cpl,</string>" +
+            "\r\n  <string>firewall2,Windowsファイアウォール(詳細),,wf.msc,</string>\r\n  <string>winword,W" +
+            "ord,,winword,</string>\r\n  <string>shell:Startup,ユーザーのスタートアップ,\\Microsoft\\Windows\\" +
+            "Start Menu\\Programs\\Startup,shell:Startup,</string>\r\n  <string>shell:Start Menu," +
+            "ユーザーのスタートメニュー,【ホットキ-】\\Microsoft\\Windows\\Start Menu,shell:Start Menu,</string>\r\n " +
+            " <string>shell:Programs,プログラムフォルダ,,shell:Programs,</string>\r\n  <string>shell:Dow" +
+            "nloads,ダウンロードフォルダ,,shell:Downloads,</string>\r\n  <string>cmd /k ipconfig,コマンドプロンプ" +
+            "ト,,cmd /k ipconfig,</string>\r\n  <string>cmd /k netsh wlan show drivers,ワイヤレスドライバ" +
+            "仕様,,cmd /k netsh wlan show drivers,</string>\r\n  <string>cmd /k netsh wlan show i" +
+            "nterfaces,ワイヤレス状態,,cmd /k netsh wlan show interfaces,</string>\r\n  <string>cmd,コマ" +
+            "ンドプロンプト,,cmd,</string>\r\n  <string>ms-settings:windowsupdate,WindowsUpdate,,ms-se" +
+            "ttings:windowsupdate,</string>\r\n  <string>ms-settings:powersleep,電源とスリープ,,ms-set" +
+            "tings:powersleep,</string>\r\n  <string>ms-settings:display,ディスプレイ,,ms-settings:di" +
+            "splay,</string>\r\n  <string>ms-settings:printers,プリンターとスキャナ,,ms-settings:printers" +
+            ",</string>\r\n  <string>hosts,ホストファイル編集,,notepad C:\\Windows\\System32\\drivers\\etc\\h" +
+            "osts,</string>\r\n  <string>share,共有フォルダ,,D:\\95_share,</string>\r\n  <string>work,ワー" +
+            "クフォルダ,,D:\\96_work,</string>\r\n  <string>tool,ツールフォルダ,,D:\\97_tool,</string>\r\n  <st" +
+            "ring>printscreen,キャプチャフォルダ,,D:\\98_printscreen,</string>\r\n  <string>my,ショートカットキーフ" +
+            "ォルダ,,D:\\99_my,</string>\r\n  <string>environment,環境変数,,rundll32.exe sysdm.cpl Edit" +
+            "EnvironmentVariables,</string>\r\n  <string>kinou,機能の有効化または無効化,,OptionalFeatures.e" +
+            "xe,</string>\r\n  <string>UAC,ユーザー制御,,UserAccountControlSettings.exe,</string>\r\n</" +
+            "ArrayOfString>")]
+        public global::System.Collections.Specialized.StringCollection COMMANDS {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["COMMANDS"]));
+            }
+            set {
+                this["COMMANDS"] = value;
             }
         }
     }
