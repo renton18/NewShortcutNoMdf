@@ -175,8 +175,12 @@ namespace 新ファイル名を指定して実行
             //設定モード
             if (e.KeyCode == Keys.F1)
             {
-                if (this.Height == 150) { this.Height = 500; this.Width = 800; }
-                else if (this.Height == 500) { this.Height = 150; this.Width = 400; }
+                if (this.Height == 150) { this.WindowState = FormWindowState.Maximized; }
+                else
+                {
+                    this.WindowState = FormWindowState.Normal;
+                    this.Height = 150; this.Width = 400;
+                }
 
                 //フォーム位置
                 switch (comboBoxDisplay.Text)
@@ -233,6 +237,18 @@ namespace 新ファイル名を指定して実行
                 statusLb.Text = ex.Message;
                 return;
             }
+        }
+
+        private void commandSearchTb_TextChanged(object sender, EventArgs e)
+        {
+            var keyword = commandSearchTb.Text.Trim();
+            commandBindingSource.DataSource = commandList.Where(a => a.alias.Contains(keyword)).ToList();
+        }
+
+        private void commandNameSearchTb_TextChanged(object sender, EventArgs e)
+        {
+            var keyword = commandNameSearchTb.Text.Trim();
+            commandBindingSource.DataSource = commandList.Where(a => a.detail1.Contains(keyword)).ToList();
         }
     }
 }

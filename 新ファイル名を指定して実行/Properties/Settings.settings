@@ -11,7 +11,6 @@
     <Setting Name="COMMANDS" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;エイリアス,詳細,補足,コマンド,管理者権限&lt;/string&gt;
   &lt;string&gt;eventvwr,イベントビューア,,eventvwr,&lt;/string&gt;
   &lt;string&gt;inetcpl.cpl,インターネットオプション,,inetcpl.cpl,&lt;/string&gt;
   &lt;string&gt;ciadv.msc,インデックスサービス,,ciadv.msc,&lt;/string&gt;
@@ -42,6 +41,7 @@
   &lt;string&gt;fxscover,送付状エディタ,,fxscover,&lt;/string&gt;
   &lt;string&gt;sol,ソリティア,,sol,&lt;/string&gt;
   &lt;string&gt;taskmgr,タスクマネージャ,,taskmgr,&lt;/string&gt;
+  &lt;string&gt;taskschd.msc,タスクスケジューラ,,taskschd.msc,&lt;/string&gt;
   &lt;string&gt;intl.cpl,地域と言語のオプション,,intl.cpl,&lt;/string&gt;
   &lt;string&gt;winchat,チャット,,winchat,&lt;/string&gt;
   &lt;string&gt;cleanmgr,ディスククリーンアップ,,cleanmgr,&lt;/string&gt;
@@ -95,8 +95,6 @@
   &lt;string&gt;shell:Programs,プログラムフォルダ,,shell:Programs,&lt;/string&gt;
   &lt;string&gt;shell:Downloads,ダウンロードフォルダ,,shell:Downloads,&lt;/string&gt;
   &lt;string&gt;cmd /k ipconfig,コマンドプロンプト,,cmd /k ipconfig,&lt;/string&gt;
-  &lt;string&gt;cmd /k netsh wlan show drivers,ワイヤレスドライバ仕様,,cmd /k netsh wlan show drivers,&lt;/string&gt;
-  &lt;string&gt;cmd /k netsh wlan show interfaces,ワイヤレス状態,,cmd /k netsh wlan show interfaces,&lt;/string&gt;
   &lt;string&gt;cmd,コマンドプロンプト,,cmd,&lt;/string&gt;
   &lt;string&gt;ms-settings:windowsupdate,WindowsUpdate,,ms-settings:windowsupdate,&lt;/string&gt;
   &lt;string&gt;ms-settings:powersleep,電源とスリープ,,ms-settings:powersleep,&lt;/string&gt;

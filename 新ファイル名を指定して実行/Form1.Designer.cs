@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            新ファイル名を指定して実行.Properties.Settings settings1 = new 新ファイル名を指定して実行.Properties.Settings();
+            新ファイル名を指定して実行.Properties.Settings settings3 = new 新ファイル名を指定して実行.Properties.Settings();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.comboBoxMain = new System.Windows.Forms.ComboBox();
             this.labelDetailInformation = new System.Windows.Forms.Label();
@@ -40,30 +40,23 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.statusLb = new System.Windows.Forms.TextBox();
-            this.commandBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.commandBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.commandDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.f1Pl = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.commandNameSearchTb = new System.Windows.Forms.TextBox();
+            this.commandSearchTb = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.aliasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.detail1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.detail2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.commadNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.authDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.commandBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.checkBoxKidoSetting = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.commandBindingNavigator)).BeginInit();
-            this.commandBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.commandDataGridView)).BeginInit();
+            this.f1Pl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,7 +108,7 @@
             this.panel1.Controls.Add(this.checkBoxKidoSetting);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.comboBoxDisplay);
-            this.panel1.Location = new System.Drawing.Point(14, 121);
+            this.panel1.Location = new System.Drawing.Point(431, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(358, 78);
             this.panel1.TabIndex = 5;
@@ -162,160 +155,107 @@
             this.statusLb.Size = new System.Drawing.Size(201, 38);
             this.statusLb.TabIndex = 11;
             // 
-            // commandBindingNavigator
+            // f1Pl
             // 
-            this.commandBindingNavigator.AddNewItem = null;
-            this.commandBindingNavigator.BindingSource = this.commandBindingSource;
-            this.commandBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.commandBindingNavigator.DeleteItem = null;
-            this.commandBindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
-            this.commandBindingNavigator.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.commandBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.commandBindingNavigatorSaveItem});
-            this.commandBindingNavigator.Location = new System.Drawing.Point(14, 202);
-            this.commandBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.commandBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.commandBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.commandBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.commandBindingNavigator.Name = "commandBindingNavigator";
-            this.commandBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.commandBindingNavigator.Size = new System.Drawing.Size(217, 25);
-            this.commandBindingNavigator.TabIndex = 12;
-            this.commandBindingNavigator.Text = "bindingNavigator1";
+            this.f1Pl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.f1Pl.Controls.Add(this.label5);
+            this.f1Pl.Controls.Add(this.label4);
+            this.f1Pl.Controls.Add(this.commandNameSearchTb);
+            this.f1Pl.Controls.Add(this.commandSearchTb);
+            this.f1Pl.Controls.Add(this.dataGridView1);
+            this.f1Pl.Location = new System.Drawing.Point(12, 131);
+            this.f1Pl.Name = "f1Pl";
+            this.f1Pl.Size = new System.Drawing.Size(1025, 318);
+            this.f1Pl.TabIndex = 13;
             // 
-            // bindingNavigatorCountItem
+            // label5
             // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(29, 22);
-            this.bindingNavigatorCountItem.Text = "/ {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "項目の総数";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(220, 11);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 12);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "内容 :";
             // 
-            // bindingNavigatorMoveFirstItem
+            // label4
             // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "最初に移動";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(10, 11);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 12);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "エイリアス :";
             // 
-            // bindingNavigatorMovePreviousItem
+            // commandNameSearchTb
             // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "前に戻る";
+            this.commandNameSearchTb.Location = new System.Drawing.Point(261, 8);
+            this.commandNameSearchTb.Name = "commandNameSearchTb";
+            this.commandNameSearchTb.Size = new System.Drawing.Size(122, 19);
+            this.commandNameSearchTb.TabIndex = 1;
+            this.commandNameSearchTb.TextChanged += new System.EventHandler(this.commandNameSearchTb_TextChanged);
             // 
-            // bindingNavigatorSeparator
+            // commandSearchTb
             // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.commandSearchTb.Location = new System.Drawing.Point(70, 8);
+            this.commandSearchTb.Name = "commandSearchTb";
+            this.commandSearchTb.Size = new System.Drawing.Size(114, 19);
+            this.commandSearchTb.TabIndex = 1;
+            this.commandSearchTb.TextChanged += new System.EventHandler(this.commandSearchTb_TextChanged);
             // 
-            // bindingNavigatorPositionItem
+            // dataGridView1
             // 
-            this.bindingNavigatorPositionItem.AccessibleName = "位置";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "現在の場所";
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.aliasDataGridViewTextBoxColumn,
+            this.detail1DataGridViewTextBoxColumn,
+            this.detail2DataGridViewTextBoxColumn,
+            this.commadNameDataGridViewTextBoxColumn,
+            this.authDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.commandBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 33);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.Height = 21;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridView1.Size = new System.Drawing.Size(1019, 269);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // bindingNavigatorSeparator1
+            // aliasDataGridViewTextBoxColumn
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.aliasDataGridViewTextBoxColumn.DataPropertyName = "alias";
+            this.aliasDataGridViewTextBoxColumn.HeaderText = "エイリアス";
+            this.aliasDataGridViewTextBoxColumn.Name = "aliasDataGridViewTextBoxColumn";
             // 
-            // bindingNavigatorMoveNextItem
+            // detail1DataGridViewTextBoxColumn
             // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "次に移動";
+            this.detail1DataGridViewTextBoxColumn.DataPropertyName = "detail1";
+            this.detail1DataGridViewTextBoxColumn.HeaderText = "詳細1";
+            this.detail1DataGridViewTextBoxColumn.Name = "detail1DataGridViewTextBoxColumn";
             // 
-            // bindingNavigatorMoveLastItem
+            // detail2DataGridViewTextBoxColumn
             // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "最後に移動";
+            this.detail2DataGridViewTextBoxColumn.DataPropertyName = "detail2";
+            this.detail2DataGridViewTextBoxColumn.HeaderText = "詳細2";
+            this.detail2DataGridViewTextBoxColumn.Name = "detail2DataGridViewTextBoxColumn";
             // 
-            // bindingNavigatorSeparator2
+            // commadNameDataGridViewTextBoxColumn
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.commadNameDataGridViewTextBoxColumn.DataPropertyName = "commadName";
+            this.commadNameDataGridViewTextBoxColumn.HeaderText = "コマンド名";
+            this.commadNameDataGridViewTextBoxColumn.Name = "commadNameDataGridViewTextBoxColumn";
             // 
-            // commandBindingNavigatorSaveItem
+            // authDataGridViewTextBoxColumn
             // 
-            this.commandBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.commandBindingNavigatorSaveItem.Enabled = false;
-            this.commandBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("commandBindingNavigatorSaveItem.Image")));
-            this.commandBindingNavigatorSaveItem.Name = "commandBindingNavigatorSaveItem";
-            this.commandBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.commandBindingNavigatorSaveItem.Text = "データの保存";
-            // 
-            // commandDataGridView
-            // 
-            this.commandDataGridView.AutoGenerateColumns = false;
-            this.commandDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.commandDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.commandDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5});
-            this.commandDataGridView.DataSource = this.commandBindingSource;
-            this.commandDataGridView.Location = new System.Drawing.Point(14, 230);
-            this.commandDataGridView.Name = "commandDataGridView";
-            this.commandDataGridView.RowHeadersVisible = false;
-            this.commandDataGridView.RowTemplate.Height = 21;
-            this.commandDataGridView.Size = new System.Drawing.Size(736, 195);
-            this.commandDataGridView.TabIndex = 12;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "alias";
-            this.dataGridViewTextBoxColumn1.HeaderText = "エイリアス";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "detail1";
-            this.dataGridViewTextBoxColumn2.HeaderText = "詳細1";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "detail2";
-            this.dataGridViewTextBoxColumn3.HeaderText = "詳細2";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "commadName";
-            this.dataGridViewTextBoxColumn4.HeaderText = "コマンド名";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "auth";
-            this.dataGridViewTextBoxColumn5.HeaderText = "管理者権限";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.authDataGridViewTextBoxColumn.DataPropertyName = "auth";
+            this.authDataGridViewTextBoxColumn.HeaderText = "管理者権限";
+            this.authDataGridViewTextBoxColumn.Name = "authDataGridViewTextBoxColumn";
             // 
             // commandBindingSource
             // 
@@ -324,13 +264,12 @@
             // checkBoxKidoSetting
             // 
             this.checkBoxKidoSetting.AutoSize = true;
-            settings1.COMMANDS = ((System.Collections.Specialized.StringCollection)(resources.GetObject("settings1.COMMANDS")));
-            settings1.COMMANDS = ((System.Collections.Specialized.StringCollection)(resources.GetObject("settings1.COMMANDS2")));
-            settings1.displaySetting = "左上";
-            settings1.kidoSetting = false;
-            settings1.SettingsKey = "";
-            this.checkBoxKidoSetting.Checked = settings1.kidoSetting;
-            this.checkBoxKidoSetting.DataBindings.Add(new System.Windows.Forms.Binding("Checked", settings1, "kidoSetting", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            settings3.COMMANDS = ((System.Collections.Specialized.StringCollection)(resources.GetObject("settings3.COMMANDS")));
+            settings3.displaySetting = "左上";
+            settings3.kidoSetting = false;
+            settings3.SettingsKey = "";
+            this.checkBoxKidoSetting.Checked = settings3.kidoSetting;
+            this.checkBoxKidoSetting.DataBindings.Add(new System.Windows.Forms.Binding("Checked", settings3, "kidoSetting", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.checkBoxKidoSetting.Location = new System.Drawing.Point(14, 12);
             this.checkBoxKidoSetting.Name = "checkBoxKidoSetting";
             this.checkBoxKidoSetting.Size = new System.Drawing.Size(69, 16);
@@ -343,9 +282,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Controls.Add(this.commandDataGridView);
-            this.Controls.Add(this.commandBindingNavigator);
+            this.ClientSize = new System.Drawing.Size(1049, 461);
+            this.Controls.Add(this.f1Pl);
             this.Controls.Add(this.statusLb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
@@ -365,10 +303,9 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.commandBindingNavigator)).EndInit();
-            this.commandBindingNavigator.ResumeLayout(false);
-            this.commandBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.commandDataGridView)).EndInit();
+            this.f1Pl.ResumeLayout(false);
+            this.f1Pl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -388,23 +325,17 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox statusLb;
         private System.Windows.Forms.BindingSource commandBindingSource;
-        private System.Windows.Forms.BindingNavigator commandBindingNavigator;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton commandBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView commandDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.Panel f1Pl;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox commandNameSearchTb;
+        private System.Windows.Forms.TextBox commandSearchTb;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aliasDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn detail1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn detail2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn commadNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn authDataGridViewTextBoxColumn;
     }
 }
 

@@ -11,9 +11,9 @@ namespace 新ファイル名を指定して実行
     {
         [DisplayName("エイリアス")]
         public string alias { get; set; }
-        [DisplayName("詳細1")]
+        [DisplayName("内容")]
         public string detail1 { get; set; }
-        [DisplayName("詳細2")]
+        [DisplayName("備考")]
         public string detail2 { get; set; }
         [DisplayName("コマンド名")]
         public string commadName { get; set; }
