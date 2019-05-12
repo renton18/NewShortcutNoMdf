@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace 新ファイル名を指定して実行
@@ -29,7 +30,7 @@ namespace 新ファイル名を指定して実行
         private void Form1_Load(object sender, EventArgs e)
         {
             //フォーム表示設定
-            this.Height = 150;
+            this.Height = 170;
             this.Width = 400;
             this.KeyPreview = true;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -131,17 +132,6 @@ namespace 新ファイル名を指定して実行
                 try
                 {
                     p.Start();
-                    //アイドル状態になるまで待機
-                    //p.WaitForInputIdle();
-                    //表示サイズ
-                    //if (e.Alt)
-                    //{
-                    //    MoveWindow(p.MainWindowHandle, 0, 0,
-                    //        Screen.PrimaryScreen.Bounds.Width / 2,
-                    //        Screen.PrimaryScreen.Bounds.Height,
-                    //        1);
-                    //}
-
                     //「常に起動」にチェックなしの場合
                     if (!checkBoxKidoSetting.Checked)
                     {
@@ -173,13 +163,13 @@ namespace 新ファイル名を指定して実行
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             //設定モード
-            if (e.KeyCode == Keys.F1)
+            if (e.KeyCode == Keys.F1 || e.KeyCode == Keys.F2)
             {
-                if (this.Height == 150) { this.WindowState = FormWindowState.Maximized; }
+                if (this.Height == 170) { this.WindowState = FormWindowState.Maximized; }
                 else
                 {
                     this.WindowState = FormWindowState.Normal;
-                    this.Height = 150; this.Width = 400;
+                    this.Height = 170; this.Width = 400;
                 }
 
                 //フォーム位置
@@ -190,8 +180,45 @@ namespace 新ファイル名を指定して実行
                     default: break;
                 }
 
-                //Datagridview表示
-                commandBindingSource.DataSource = commandList.ToList();
+                if (e.KeyCode == Keys.F1)
+                {
+                    f1Pl.BringToFront();
+                    if (commandBindingSource.Count == 0)
+                    {
+                        //Datagridview表示
+                        commandBindingSource.DataSource = commandList.ToList();
+                    }
+                }
+                else if (e.KeyCode == Keys.F2)
+                {
+                    
+                    f2Pl.BringToFront();
+                    if (string.IsNullOrEmpty(currentWifiTb.Text))
+                    {
+                        var ipStatusText = Regex.Replace(CommandExecute("ipconfig", ""), @"^[\r\n]+", string.Empty, RegexOptions.Multiline);
+                        ipStatusTb.Text = "【実行コマンド】ipconfig" + Environment.NewLine + ipStatusText.Replace(" ", "");
+
+                        var currentWifiText = Regex.Replace(CommandExecute("netsh", "wlan show interface"), @"^[\r\n]+", string.Empty, RegexOptions.Multiline);
+                        currentWifiTb.Text = "【実行コマンド】netsh wlan show interface" + Environment.NewLine + currentWifiText.Replace(" ", "");
+
+                        enableWifiTb.Text = "【実行コマンド】netsh wlan show drivers" + Environment.NewLine + CommandExecute("netsh", "wlan show drivers").Replace(" ", "");
+
+                        anotherTb.Text = "【シリアルとPCモデル】" + Environment.NewLine + CommandExecute("wmic", "csproduct get name,identifyingnumber").Replace(" ", "");
+                        var sqlServerVersion = CommandExecute("sqlcmd", @"-Q ""select @@version""");
+                        if (!string.IsNullOrEmpty(sqlServerVersion))
+                        {
+                            var anotherText = Regex.Split(sqlServerVersion, @"^\r\n", RegexOptions.Multiline)[0].Replace("-", "").Trim();
+                            anotherTb.Text = anotherTb.Text + @"【実行コマンド】sqlcmd -Q ""select @@version""" + Environment.NewLine + anotherText;
+                        }
+                        //ローカルDBバージョン
+                        var localDbVersion = CommandExecute("sqllocaldb", "info");
+                        if (!string.IsNullOrEmpty(localDbVersion))
+                        {
+                            var anotherText = localDbVersion.Trim();
+                            anotherTb.Text = anotherTb.Text + Environment.NewLine + Environment.NewLine + @"【実行コマンド】sqllocaldb info" + Environment.NewLine + anotherText;
+                        }
+                    }
+                }
             }
             //管理者権限表示
             if (e.Shift && e.Control)
@@ -201,6 +228,32 @@ namespace 新ファイル名を指定して実行
                 comboBoxMain.SelectionStart = comboBoxMain.Text.Length;
                 comboBoxMain.ForeColor = Color.Brown;
             }
+        }
+        private string CommandExecute(string command, string arg)
+        {
+            string result = "";
+            Process p = new Process();
+            //出力を読み取れるようにする
+            p.StartInfo.FileName = command;
+            p.StartInfo.Arguments = arg;
+            p.StartInfo.UseShellExecute = false;
+            p.StartInfo.RedirectStandardOutput = true;
+            p.StartInfo.RedirectStandardInput = false;
+            //ウィンドウを表示しないようにする
+            p.StartInfo.CreateNoWindow = true;
+
+            try
+            {
+                p.Start();
+                result = p.StandardOutput.ReadToEnd();
+                p.WaitForExit();
+                p.Close();
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(ex.Message);
+            }
+            return result;
         }
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
