@@ -163,7 +163,7 @@ namespace 新ファイル名を指定して実行
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             //設定モード
-            if (e.KeyCode == Keys.F1 || e.KeyCode == Keys.F2)
+            if (e.KeyCode == Keys.F1 || e.KeyCode == Keys.F2 || e.KeyCode == Keys.F3)
             {
                 if (this.Height == 170) { this.WindowState = FormWindowState.Maximized; }
                 else
@@ -182,6 +182,7 @@ namespace 新ファイル名を指定して実行
 
                 if (e.KeyCode == Keys.F1)
                 {
+                    tabControl.SelectedIndex = 0;
                     f1Pl.BringToFront();
                     if (commandBindingSource.Count == 0)
                     {
@@ -191,7 +192,7 @@ namespace 新ファイル名を指定して実行
                 }
                 else if (e.KeyCode == Keys.F2)
                 {
-                    
+                    tabControl.SelectedIndex = 1;
                     f2Pl.BringToFront();
                     if (string.IsNullOrEmpty(currentWifiTb.Text))
                     {
@@ -218,6 +219,11 @@ namespace 新ファイル名を指定して実行
                             anotherTb.Text = anotherTb.Text + Environment.NewLine + Environment.NewLine + @"【実行コマンド】sqllocaldb info" + Environment.NewLine + anotherText;
                         }
                     }
+                }
+                else if (e.KeyCode == Keys.F3)
+                {
+                    tabControl.SelectedIndex = 2;
+
                 }
             }
             //管理者権限表示
