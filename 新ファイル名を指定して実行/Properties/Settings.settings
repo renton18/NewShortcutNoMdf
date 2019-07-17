@@ -41,6 +41,7 @@
   &lt;string&gt;fxscover,送付状エディタ,,fxscover,&lt;/string&gt;
   &lt;string&gt;sol,ソリティア,,sol,&lt;/string&gt;
   &lt;string&gt;taskmgr,タスクマネージャ,,taskmgr,&lt;/string&gt;
+  &lt;string&gt;taskschd.msc,タスクスケジューラ,,taskschd.msc,&lt;/string&gt;
   &lt;string&gt;intl.cpl,地域と言語のオプション,,intl.cpl,&lt;/string&gt;
   &lt;string&gt;winchat,チャット,,winchat,&lt;/string&gt;
   &lt;string&gt;cleanmgr,ディスククリーンアップ,,cleanmgr,&lt;/string&gt;
