@@ -70,54 +70,55 @@ namespace 新ファイル名を指定して実行.Properties {
             "rtmgr.msc,</string>\r\n  <string>osk,スクリーンキーボード,,osk,</string>\r\n  <string>spider,ス" +
             "パイダ,,spider,</string>\r\n  <string>fxscover,送付状エディタ,,fxscover,</string>\r\n  <string" +
             ">sol,ソリティア,,sol,</string>\r\n  <string>taskmgr,タスクマネージャ,,taskmgr,</string>\r\n  <str" +
-            "ing>taskschd.msc,タスクスケジューラ,,taskschd.msc,</string>\r\n  <string>intl.cpl,地域と言語のオプシ" +
-            "ョン,,intl.cpl,</string>\r\n  <string>winchat,チャット,,winchat,</string>\r\n  <string>cle" +
-            "anmgr,ディスククリーンアップ,,cleanmgr,</string>\r\n  <string>dfrg.msc,ディスクデフラグツール,,dfrg.msc," +
-            "</string>\r\n  <string>diskmgmt.msc,ディスクの管理,,diskmgmt.msc,</string>\r\n  <string>dev" +
-            "mgmt.msc,デバイスマネージャ,,devmgmt.msc,</string>\r\n  <string>powercfg.cpl,電源オプション,,power" +
-            "cfg.cpl,</string>\r\n  <string>calc,電卓,,calc,</string>\r\n  <string>ncpa.cpl,ネットワーク接" +
-            "続,,ncpa.cpl,</string>\r\n  <string>mshearts,ハーツ,,mshearts,</string>\r\n  <string>per" +
-            "fmon,パフォーマンス,,perfmon,</string>\r\n  <string>timedate.cpl,日付と時刻のプロパティ,,timedate.cp" +
-            "l,</string>\r\n  <string>sigverif,ファイルの署名と確認,,sigverif,</string>\r\n  <string>fonts," +
-            "フォントフォルダ,,fonts,</string>\r\n  <string>appwiz.cpl,プログラムの追加と削除,,appwiz.cpl,</string" +
-            ">\r\n  <string>mspaint,ペイント,,mspaint,</string>\r\n  <string>sndvol32,ボリュームコントロール,,sn" +
-            "dvol32,</string>\r\n  <string>main.cpl,マウスのプロパティ,,main.cpl,</string>\r\n  <string>no" +
-            "tepad,メモ帳,,notepad,</string>\r\n  <string>charmap,文字コード表,,charmap,</string>\r\n  <st" +
-            "ring>nusrmgr.cpl,ユーザーアカウント,,nusrmgr.cpl,</string>\r\n  <string>ntmsmgr.msc,リムーバブル記" +
-            "憶領域の管理,,ntmsmgr.msc,</string>\r\n  <string>ntmsoprq.msc,リムーバブル記憶領域の操作要求,,ntmsoprq." +
-            "msc,</string>\r\n  <string>mstsc,リモートデスクトップ接続,,mstsc,</string>\r\n  <string>regedit," +
-            "レジストリエディタ,,regedit,</string>\r\n  <string>secpol.msc,ローカルセキュリティポリシー,,secpol.msc,</" +
-            "string>\r\n  <string>lusrmgr.msc,ローカルユーザとグループ,,lusrmgr.msc,</string>\r\n  <string>lo" +
-            "goff,ログオフ,,logoff,</string>\r\n  <string>wordpad,ワードパット,,wordpad,</string>\r\n  <str" +
-            "ing>msaccess,Access,,msaccess,</string>\r\n  <string>dxdiag,Direct X診断ツール,,dxdiag," +
-            "</string>\r\n  <string>excel,Excel,,excel,</string>\r\n  <string>iexpress,IExpress（自" +
-            "己解凍書庫作成）,,iexpress,</string>\r\n  <string>iexplorer,Internet Explorer,,iexplorer,<" +
-            "/string>\r\n  <string>wupdmgr,Microsoft Update,,wupdmgr,</string>\r\n  <string>mrt,M" +
-            "icrosoft Windows　悪意のあるソフトウェアの削除ツール,,mrt,</string>\r\n  <string>nslookup,nslookup,," +
-            "nslookup,</string>\r\n  <string>odbcad32,ODBCデータソースアドミニストレータ,,odbcad32,</string>\r\n" +
-            "  <string>outlook,Outlook,,outlook,</string>\r\n  <string>powerpnt,PowerPoint,,pow" +
-            "erpnt,</string>\r\n  <string>telnet,Telnet,,telnet,</string>\r\n  <string>visio32,Vi" +
-            "sio,,visio32,</string>\r\n  <string>wmplayer,Windows Media Player,,wmplayer,</stri" +
-            "ng>\r\n  <string>wscui.msc,Windowsセキュリティセンター,,wscui.msc,</string>\r\n  <string>winve" +
-            "r,Windowsバージョン情報,,winver,</string>\r\n  <string>firewall1,Windowsファイアウォール,,firewal" +
-            "l.cpl,</string>\r\n  <string>firewall2,Windowsファイアウォール(詳細),,wf.msc,</string>\r\n  <s" +
-            "tring>winword,Word,,winword,</string>\r\n  <string>shell:Startup,ユーザーのスタートアップ,\\Mic" +
-            "rosoft\\Windows\\Start Menu\\Programs\\Startup,shell:Startup,</string>\r\n  <string>sh" +
-            "ell:Start Menu,ユーザーのスタートメニュー,【ホットキ-】\\Microsoft\\Windows\\Start Menu,shell:Start Me" +
-            "nu,</string>\r\n  <string>shell:Programs,プログラムフォルダ,,shell:Programs,</string>\r\n  <s" +
-            "tring>shell:Downloads,ダウンロードフォルダ,,shell:Downloads,</string>\r\n  <string>cmd /k ip" +
-            "config,コマンドプロンプト,,cmd /k ipconfig,</string>\r\n  <string>cmd,コマンドプロンプト,,cmd,</stri" +
-            "ng>\r\n  <string>ms-settings:windowsupdate,WindowsUpdate,,ms-settings:windowsupdat" +
-            "e,</string>\r\n  <string>ms-settings:powersleep,電源とスリープ,,ms-settings:powersleep,</" +
-            "string>\r\n  <string>ms-settings:display,ディスプレイ,,ms-settings:display,</string>\r\n  " +
-            "<string>ms-settings:printers,プリンターとスキャナ,,ms-settings:printers,</string>\r\n  <stri" +
-            "ng>hosts,ホストファイル編集,,notepad C:\\Windows\\System32\\drivers\\etc\\hosts,</string>\r\n  <" +
-            "string>share,共有フォルダ,,D:\\95_share,</string>\r\n  <string>work,ワークフォルダ,,D:\\96_work,<" +
-            "/string>\r\n  <string>tool,ツールフォルダ,,D:\\97_tool,</string>\r\n  <string>printscreen,キャ" +
-            "プチャフォルダ,,D:\\98_printscreen,</string>\r\n  <string>my,ショートカットキーフォルダ,,D:\\99_my,</str" +
-            "ing>\r\n  <string>environment,環境変数,,rundll32.exe sysdm.cpl EditEnvironmentVariable" +
-            "s,</string>\r\n  <string>kinou,機能の有効化または無効化,,OptionalFeatures.exe,</string>\r\n  <st" +
-            "ring>UAC,ユーザー制御,,UserAccountControlSettings.exe,</string>\r\n</ArrayOfString>")]
+            "ing>intl.cpl,地域と言語のオプション,,intl.cpl,</string>\r\n  <string>winchat,チャット,,winchat,</" +
+            "string>\r\n  <string>cleanmgr,ディスククリーンアップ,,cleanmgr,</string>\r\n  <string>dfrg.msc," +
+            "ディスクデフラグツール,,dfrg.msc,</string>\r\n  <string>diskmgmt.msc,ディスクの管理,,diskmgmt.msc,</" +
+            "string>\r\n  <string>devmgmt.msc,デバイスマネージャ,,devmgmt.msc,</string>\r\n  <string>power" +
+            "cfg.cpl,電源オプション,,powercfg.cpl,</string>\r\n  <string>calc,電卓,,calc,</string>\r\n  <s" +
+            "tring>ncpa.cpl,ネットワーク接続,,ncpa.cpl,</string>\r\n  <string>mshearts,ハーツ,,mshearts,</" +
+            "string>\r\n  <string>perfmon,パフォーマンス,,perfmon,</string>\r\n  <string>timedate.cpl,日付" +
+            "と時刻のプロパティ,,timedate.cpl,</string>\r\n  <string>sigverif,ファイルの署名と確認,,sigverif,</str" +
+            "ing>\r\n  <string>fonts,フォントフォルダ,,fonts,</string>\r\n  <string>appwiz.cpl,プログラムの追加と削" +
+            "除,,appwiz.cpl,</string>\r\n  <string>mspaint,ペイント,,mspaint,</string>\r\n  <string>sn" +
+            "dvol32,ボリュームコントロール,,sndvol32,</string>\r\n  <string>main.cpl,マウスのプロパティ,,main.cpl,<" +
+            "/string>\r\n  <string>notepad,メモ帳,,notepad,</string>\r\n  <string>charmap,文字コード表,,ch" +
+            "armap,</string>\r\n  <string>nusrmgr.cpl,ユーザーアカウント,,nusrmgr.cpl,</string>\r\n  <stri" +
+            "ng>ntmsmgr.msc,リムーバブル記憶領域の管理,,ntmsmgr.msc,</string>\r\n  <string>ntmsoprq.msc,リムーバ" +
+            "ブル記憶領域の操作要求,,ntmsoprq.msc,</string>\r\n  <string>mstsc,リモートデスクトップ接続,,mstsc,</strin" +
+            "g>\r\n  <string>regedit,レジストリエディタ,,regedit,</string>\r\n  <string>secpol.msc,ローカルセキュ" +
+            "リティポリシー,,secpol.msc,</string>\r\n  <string>lusrmgr.msc,ローカルユーザとグループ,,lusrmgr.msc,<" +
+            "/string>\r\n  <string>logoff,ログオフ,,logoff,</string>\r\n  <string>wordpad,ワードパット,,wor" +
+            "dpad,</string>\r\n  <string>msaccess,Access,,msaccess,</string>\r\n  <string>dxdiag," +
+            "Direct X診断ツール,,dxdiag,</string>\r\n  <string>excel,Excel,,excel,</string>\r\n  <stri" +
+            "ng>iexpress,IExpress（自己解凍書庫作成）,,iexpress,</string>\r\n  <string>iexplorer,Internet" +
+            " Explorer,,iexplorer,</string>\r\n  <string>wupdmgr,Microsoft Update,,wupdmgr,</st" +
+            "ring>\r\n  <string>mrt,Microsoft Windows　悪意のあるソフトウェアの削除ツール,,mrt,</string>\r\n  <stri" +
+            "ng>nslookup,nslookup,,nslookup,</string>\r\n  <string>odbcad32,ODBCデータソースアドミニストレータ" +
+            ",,odbcad32,</string>\r\n  <string>outlook,Outlook,,outlook,</string>\r\n  <string>po" +
+            "werpnt,PowerPoint,,powerpnt,</string>\r\n  <string>telnet,Telnet,,telnet,</string>" +
+            "\r\n  <string>visio32,Visio,,visio32,</string>\r\n  <string>wmplayer,Windows Media P" +
+            "layer,,wmplayer,</string>\r\n  <string>wscui.msc,Windowsセキュリティセンター,,wscui.msc,</st" +
+            "ring>\r\n  <string>winver,Windowsバージョン情報,,winver,</string>\r\n  <string>firewall1,Wi" +
+            "ndowsファイアウォール,,firewall.cpl,</string>\r\n  <string>firewall2,Windowsファイアウォール(詳細),," +
+            "wf.msc,</string>\r\n  <string>winword,Word,,winword,</string>\r\n  <string>shell:Sta" +
+            "rtup,ユーザーのスタートアップ,\\Microsoft\\Windows\\Start Menu\\Programs\\Startup,shell:Startup,<" +
+            "/string>\r\n  <string>shell:Start Menu,ユーザーのスタートメニュー,【ホットキ-】\\Microsoft\\Windows\\Sta" +
+            "rt Menu,shell:Start Menu,</string>\r\n  <string>shell:Programs,プログラムフォルダ,,shell:Pr" +
+            "ograms,</string>\r\n  <string>shell:Downloads,ダウンロードフォルダ,,shell:Downloads,</string" +
+            ">\r\n  <string>cmd /k ipconfig,コマンドプロンプト,,cmd /k ipconfig,</string>\r\n  <string>cmd" +
+            ",コマンドプロンプト,,cmd,</string>\r\n  <string>ms-settings:windowsupdate,WindowsUpdate,,ms" +
+            "-settings:windowsupdate,</string>\r\n  <string>ms-settings:powersleep,電源とスリープ,,ms-" +
+            "settings:powersleep,</string>\r\n  <string>ms-settings:display,ディスプレイ,,ms-settings" +
+            ":display,</string>\r\n  <string>ms-settings:printers,プリンターとスキャナ,,ms-settings:print" +
+            "ers,</string>\r\n  <string>hosts,ホストファイル編集,,notepad C:\\Windows\\System32\\drivers\\et" +
+            "c\\hosts,</string>\r\n  <string>share,共有フォルダ,,D:\\95_share,</string>\r\n  <string>work" +
+            ",ワークフォルダ,,D:\\96_work,</string>\r\n  <string>tool,ツールフォルダ,,D:\\97_tool,</string>\r\n  " +
+            "<string>printscreen,キャプチャフォルダ,,D:\\98_printscreen,</string>\r\n  <string>my,ショートカット" +
+            "キーフォルダ,,D:\\99_my,</string>\r\n  <string>environment,環境変数,,rundll32.exe sysdm.cpl E" +
+            "ditEnvironmentVariables,</string>\r\n  <string>kinou,機能の有効化または無効化,,OptionalFeature" +
+            "s.exe,</string>\r\n  <string>UAC,ユーザー制御,,UserAccountControlSettings.exe,</string>\r" +
+            "\n  <string>shell:Downloads,ダウンロードフォルダ,,shell:Downloads,</string>\r\n  <string>shel" +
+            "l:common startup,ダウンロードフォルダ,,shell:common startup,</string>\r\n</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection COMMANDS {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["COMMANDS"]));

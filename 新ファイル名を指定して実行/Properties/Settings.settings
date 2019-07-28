@@ -41,7 +41,6 @@
   &lt;string&gt;fxscover,送付状エディタ,,fxscover,&lt;/string&gt;
   &lt;string&gt;sol,ソリティア,,sol,&lt;/string&gt;
   &lt;string&gt;taskmgr,タスクマネージャ,,taskmgr,&lt;/string&gt;
-  &lt;string&gt;taskschd.msc,タスクスケジューラ,,taskschd.msc,&lt;/string&gt;
   &lt;string&gt;intl.cpl,地域と言語のオプション,,intl.cpl,&lt;/string&gt;
   &lt;string&gt;winchat,チャット,,winchat,&lt;/string&gt;
   &lt;string&gt;cleanmgr,ディスククリーンアップ,,cleanmgr,&lt;/string&gt;
@@ -109,6 +108,8 @@
   &lt;string&gt;environment,環境変数,,rundll32.exe sysdm.cpl EditEnvironmentVariables,&lt;/string&gt;
   &lt;string&gt;kinou,機能の有効化または無効化,,OptionalFeatures.exe,&lt;/string&gt;
   &lt;string&gt;UAC,ユーザー制御,,UserAccountControlSettings.exe,&lt;/string&gt;
+  &lt;string&gt;shell:Downloads,ダウンロードフォルダ,,shell:Downloads,&lt;/string&gt;
+  &lt;string&gt;shell:common startup,ダウンロードフォルダ,,shell:common startup,&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
   </Settings>
