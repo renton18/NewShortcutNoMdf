@@ -117,8 +117,7 @@ namespace 新ファイル名を指定して実行.Properties {
             "キーフォルダ,,D:\\99_my,</string>\r\n  <string>environment,環境変数,,rundll32.exe sysdm.cpl E" +
             "ditEnvironmentVariables,</string>\r\n  <string>kinou,機能の有効化または無効化,,OptionalFeature" +
             "s.exe,</string>\r\n  <string>UAC,ユーザー制御,,UserAccountControlSettings.exe,</string>\r" +
-            "\n  <string>shell:Downloads,ダウンロードフォルダ,,shell:Downloads,</string>\r\n  <string>shel" +
-            "l:common startup,ダウンロードフォルダ,,shell:common startup,</string>\r\n</ArrayOfString>")]
+            "\n  <string>taskschd.msc,タスクマネージャ,,taskschd.msc,</string>\r\n</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection COMMANDS {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["COMMANDS"]));

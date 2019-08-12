@@ -108,8 +108,7 @@
   &lt;string&gt;environment,環境変数,,rundll32.exe sysdm.cpl EditEnvironmentVariables,&lt;/string&gt;
   &lt;string&gt;kinou,機能の有効化または無効化,,OptionalFeatures.exe,&lt;/string&gt;
   &lt;string&gt;UAC,ユーザー制御,,UserAccountControlSettings.exe,&lt;/string&gt;
-  &lt;string&gt;shell:Downloads,ダウンロードフォルダ,,shell:Downloads,&lt;/string&gt;
-  &lt;string&gt;shell:common startup,ダウンロードフォルダ,,shell:common startup,&lt;/string&gt;
+  &lt;string&gt;taskschd.msc,タスクマネージャ,,taskschd.msc,&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
   </Settings>

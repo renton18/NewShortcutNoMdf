@@ -80,6 +80,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnPerfmon = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -609,6 +610,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.btnPerfmon);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(423, 3);
@@ -638,6 +640,16 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1218, 410);
             this.panel4.TabIndex = 0;
+            // 
+            // btnPerfmon
+            // 
+            this.btnPerfmon.Location = new System.Drawing.Point(250, 28);
+            this.btnPerfmon.Name = "btnPerfmon";
+            this.btnPerfmon.Size = new System.Drawing.Size(120, 38);
+            this.btnPerfmon.TabIndex = 6;
+            this.btnPerfmon.Text = "信頼性モニタ";
+            this.btnPerfmon.UseVisualStyleBackColor = true;
+            this.btnPerfmon.Click += new System.EventHandler(this.BtnPerfmon_Click);
             // 
             // Form1
             // 
@@ -740,6 +752,7 @@
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.Button btnPerfmon;
     }
 }
 

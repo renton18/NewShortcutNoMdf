@@ -309,5 +309,32 @@ namespace 新ファイル名を指定して実行
             var keyword = commandNameSearchTb.Text.Trim();
             commandBindingSource.DataSource = commandList.Where(a => a.detail1.Contains(keyword)).ToList();
         }
+
+        /// <summary>
+        /// 信頼性モニタ
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnPerfmon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (Process p = new Process())
+                {
+                    p.StartInfo.FileName = "perfmon";
+                    p.StartInfo.Arguments = "/rel";
+                    p.Start();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("コマンド実行失敗しました" + Environment.NewLine + ex.Message);
+            }
+            finally
+            {
+                this.Close();
+                this.Dispose();
+            }
+        }
     }
 }
