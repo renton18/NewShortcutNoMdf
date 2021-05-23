@@ -59,6 +59,11 @@ namespace 新ファイル名を指定して実行
                     continue;
                 }
                 String[] items = record.Split(',');
+                if (items.Length == 4)
+                {
+                    Array.Resize(ref items, 5);
+                    items[4] = "";
+                }
                 //コマンドリストの作成
                 Command command = new Command
                 {
@@ -165,13 +170,13 @@ namespace 新ファイル名を指定して実行
             //設定モード
             if (e.KeyCode == Keys.F1 || e.KeyCode == Keys.F2 || e.KeyCode == Keys.F3)
             {
+                //フォームサイズ
                 if (this.Height == 170) { this.WindowState = FormWindowState.Maximized; }
                 else
                 {
                     this.WindowState = FormWindowState.Normal;
                     this.Height = 170; this.Width = 400;
                 }
-
                 //フォーム位置
                 switch (comboBoxDisplay.Text)
                 {
@@ -190,40 +195,39 @@ namespace 新ファイル名を指定して実行
                         commandBindingSource.DataSource = commandList.ToList();
                     }
                 }
-                else if (e.KeyCode == Keys.F2)
-                {
-                    tabControl.SelectedIndex = 1;
-                    f2Pl.BringToFront();
-                    if (string.IsNullOrEmpty(currentWifiTb.Text))
-                    {
-                        var ipStatusText = Regex.Replace(CommandExecute("ipconfig", ""), @"^[\r\n]+", string.Empty, RegexOptions.Multiline);
-                        ipStatusTb.Text = "【実行コマンド】ipconfig" + Environment.NewLine + ipStatusText.Replace(" ", "");
+                //else if (e.KeyCode == Keys.F2)
+                //{
+                //    tabControl.SelectedIndex = 1;
+                //    f2Pl.BringToFront();
+                //    if (string.IsNullOrEmpty(currentWifiTb.Text))
+                //    {
+                //        var ipStatusText = Regex.Replace(CommandExecute("ipconfig", ""), @"^[\r\n]+", string.Empty, RegexOptions.Multiline);
+                //        ipStatusTb.Text = "【実行コマンド】ipconfig" + Environment.NewLine + ipStatusText.Replace(" ", "");
 
-                        var currentWifiText = Regex.Replace(CommandExecute("netsh", "wlan show interface"), @"^[\r\n]+", string.Empty, RegexOptions.Multiline);
-                        currentWifiTb.Text = "【実行コマンド】netsh wlan show interface" + Environment.NewLine + currentWifiText.Replace(" ", "");
+                //        var currentWifiText = Regex.Replace(CommandExecute("netsh", "wlan show interface"), @"^[\r\n]+", string.Empty, RegexOptions.Multiline);
+                //        currentWifiTb.Text = "【実行コマンド】netsh wlan show interface" + Environment.NewLine + currentWifiText.Replace(" ", "");
 
-                        enableWifiTb.Text = "【実行コマンド】netsh wlan show drivers" + Environment.NewLine + CommandExecute("netsh", "wlan show drivers").Replace(" ", "");
+                //        enableWifiTb.Text = "【実行コマンド】netsh wlan show drivers" + Environment.NewLine + CommandExecute("netsh", "wlan show drivers").Replace(" ", "");
 
-                        anotherTb.Text = "【シリアルとPCモデル】" + Environment.NewLine + CommandExecute("wmic", "csproduct get name,identifyingnumber").Replace(" ", "");
-                        var sqlServerVersion = CommandExecute("sqlcmd", @"-Q ""select @@version""");
-                        if (!string.IsNullOrEmpty(sqlServerVersion))
-                        {
-                            var anotherText = Regex.Split(sqlServerVersion, @"^\r\n", RegexOptions.Multiline)[0].Replace("-", "").Trim();
-                            anotherTb.Text = anotherTb.Text + @"【実行コマンド】sqlcmd -Q ""select @@version""" + Environment.NewLine + anotherText;
-                        }
-                        //ローカルDBバージョン
-                        var localDbVersion = CommandExecute("sqllocaldb", "info");
-                        if (!string.IsNullOrEmpty(localDbVersion))
-                        {
-                            var anotherText = localDbVersion.Trim();
-                            anotherTb.Text = anotherTb.Text + Environment.NewLine + Environment.NewLine + @"【実行コマンド】sqllocaldb info" + Environment.NewLine + anotherText;
-                        }
-                    }
-                }
+                //        anotherTb.Text = "【シリアルとPCモデル】" + Environment.NewLine + CommandExecute("wmic", "csproduct get name,identifyingnumber").Replace(" ", "");
+                //        var sqlServerVersion = CommandExecute("sqlcmd", @"-Q ""select @@version""");
+                //        if (!string.IsNullOrEmpty(sqlServerVersion))
+                //        {
+                //            var anotherText = Regex.Split(sqlServerVersion, @"^\r\n", RegexOptions.Multiline)[0].Replace("-", "").Trim();
+                //            anotherTb.Text = anotherTb.Text + @"【実行コマンド】sqlcmd -Q ""select @@version""" + Environment.NewLine + anotherText;
+                //        }
+                //        //ローカルDBバージョン
+                //        var localDbVersion = CommandExecute("sqllocaldb", "info");
+                //        if (!string.IsNullOrEmpty(localDbVersion))
+                //        {
+                //            var anotherText = localDbVersion.Trim();
+                //            anotherTb.Text = anotherTb.Text + Environment.NewLine + Environment.NewLine + @"【実行コマンド】sqllocaldb info" + Environment.NewLine + anotherText;
+                //        }
+                //    }
+                //}
                 else if (e.KeyCode == Keys.F3)
                 {
                     tabControl.SelectedIndex = 2;
-
                 }
             }
             //管理者権限表示
@@ -257,6 +261,7 @@ namespace 新ファイル名を指定して実行
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 //MessageBox.Show(ex.Message);
             }
             return result;
@@ -288,7 +293,7 @@ namespace 新ファイル名を指定して実行
             {
                 command = commandList.SingleOrDefault(a => a.alias == comboBoxMain.Text);
                 statusLb.ForeColor = Color.Black;
-                statusLb.Text = command.commadName + Environment.NewLine + command.detail1;
+                if(command != null) statusLb.Text = command.commadName + Environment.NewLine + command.detail1;
             }
             catch (Exception ex)
             {

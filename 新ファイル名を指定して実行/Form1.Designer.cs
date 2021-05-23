@@ -60,6 +60,9 @@
             this.ipStatusTb = new System.Windows.Forms.TextBox();
             this.f3Pl = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -78,9 +81,10 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnPerfmon = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnPerfmon = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -89,6 +93,7 @@
             this.f2Pl.SuspendLayout();
             this.f3Pl.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -414,10 +419,13 @@
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
+            this.tableLayoutPanel3.ColumnCount = 4;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel3.Controls.Add(this.panel10, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.richTextBox4, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.richTextBox3, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.richTextBox2, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.panel9, 0, 1);
@@ -430,24 +438,52 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1204, 376);
             this.tableLayoutPanel3.TabIndex = 0;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label9);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(906, 3);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(295, 24);
+            this.panel10.TabIndex = 3;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 5);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(59, 15);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Windows";
+            // 
+            // richTextBox4
+            // 
+            this.richTextBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox4.Location = new System.Drawing.Point(3, 33);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.Size = new System.Drawing.Size(295, 340);
+            this.richTextBox4.TabIndex = 6;
+            this.richTextBox4.Text = "";
             // 
             // richTextBox3
             // 
             this.richTextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox3.Location = new System.Drawing.Point(805, 33);
+            this.richTextBox3.Location = new System.Drawing.Point(906, 33);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(396, 340);
+            this.richTextBox3.Size = new System.Drawing.Size(295, 340);
             this.richTextBox3.TabIndex = 5;
-            this.richTextBox3.Text = "";
+            this.richTextBox3.Text = "WIN ＋ CTRL ＋ SHIFT ＋ B  ディスプレイドライバ再起動";
             // 
             // richTextBox2
             // 
             this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox2.Location = new System.Drawing.Point(404, 33);
+            this.richTextBox2.Location = new System.Drawing.Point(605, 33);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(395, 340);
+            this.richTextBox2.Size = new System.Drawing.Size(295, 340);
             this.richTextBox2.TabIndex = 4;
             this.richTextBox2.Text = "CTRL + ALT + 1　フォーム編集レイアウト\nCTRL + ALT + 2　コーディングレイアウト\nCTRL + ALT + 3　レイアウト\n\nCTRL " +
     "+ Shift + ↓　アクティブワードの次に移動する\nCTRL + G　行番号移動";
@@ -456,9 +492,9 @@
             // 
             this.panel9.Controls.Add(this.richTextBox1);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(3, 33);
+            this.panel9.Location = new System.Drawing.Point(304, 33);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(395, 340);
+            this.panel9.Size = new System.Drawing.Size(295, 340);
             this.panel9.TabIndex = 3;
             // 
             // richTextBox1
@@ -466,7 +502,7 @@
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(395, 340);
+            this.richTextBox1.Size = new System.Drawing.Size(295, 340);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -474,9 +510,9 @@
             // 
             this.panel8.Controls.Add(this.label8);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(805, 3);
+            this.panel8.Location = new System.Drawing.Point(605, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(396, 24);
+            this.panel8.Size = new System.Drawing.Size(295, 24);
             this.panel8.TabIndex = 2;
             // 
             // label8
@@ -492,9 +528,9 @@
             // 
             this.panel7.Controls.Add(this.label7);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(404, 3);
+            this.panel7.Location = new System.Drawing.Point(304, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(395, 24);
+            this.panel7.Size = new System.Drawing.Size(295, 24);
             this.panel7.TabIndex = 1;
             // 
             // label7
@@ -512,7 +548,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(3, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(395, 24);
+            this.panel6.Size = new System.Drawing.Size(295, 24);
             this.panel6.TabIndex = 0;
             // 
             // label6
@@ -610,6 +646,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.btnPerfmon);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -617,6 +654,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(792, 148);
             this.panel3.TabIndex = 1;
+            // 
+            // btnPerfmon
+            // 
+            this.btnPerfmon.Location = new System.Drawing.Point(250, 28);
+            this.btnPerfmon.Name = "btnPerfmon";
+            this.btnPerfmon.Size = new System.Drawing.Size(120, 38);
+            this.btnPerfmon.TabIndex = 6;
+            this.btnPerfmon.Text = "信頼性モニタ";
+            this.btnPerfmon.UseVisualStyleBackColor = true;
+            this.btnPerfmon.Click += new System.EventHandler(this.BtnPerfmon_Click);
             // 
             // panel2
             // 
@@ -641,15 +688,14 @@
             this.panel4.Size = new System.Drawing.Size(1218, 410);
             this.panel4.TabIndex = 0;
             // 
-            // btnPerfmon
+            // button1
             // 
-            this.btnPerfmon.Location = new System.Drawing.Point(250, 28);
-            this.btnPerfmon.Name = "btnPerfmon";
-            this.btnPerfmon.Size = new System.Drawing.Size(120, 38);
-            this.btnPerfmon.TabIndex = 6;
-            this.btnPerfmon.Text = "信頼性モニタ";
-            this.btnPerfmon.UseVisualStyleBackColor = true;
-            this.btnPerfmon.Click += new System.EventHandler(this.BtnPerfmon_Click);
+            this.button1.Location = new System.Drawing.Point(250, 76);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 38);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "信頼性モニタ";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -679,6 +725,8 @@
             this.f2Pl.PerformLayout();
             this.f3Pl.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
@@ -753,6 +801,10 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.Button btnPerfmon;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.RichTextBox richTextBox4;
+        private System.Windows.Forms.Button button1;
     }
 }
 
